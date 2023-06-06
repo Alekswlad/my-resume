@@ -117,6 +117,115 @@ body {
   line-height: 24px;
   color: #0a0a0a;
 }
+.education-certificate {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 2;
+}
+.education-certificate img {
+  width: 70%;
+  transition: transform 500ms ease;
+}
+/* hg */
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close:hover {
+  transform: rotate(180deg);
+}
+
+.close span {
+  width: 20px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+}
+
+.close span:first-child {
+  transform: rotate(45deg);
+}
+
+.close span:last-child {
+  transform: rotate(135deg);
+}
+.popup__close {
+  background: #1e2939;
+  right: 300px;
+  top: 10px;
+  z-index: 2;
+}
+.popup__close span {
+  background: white;
+}
+/* bt */
+button {
+  height: 1.6em;
+  width: 19em;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 1px solid #1e2939;
+  outline: none;
+  color: #fb6d3a;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background: #fb6d3a;
+  color: #ffffff;
+  animation: squeeze3124 0.9s both;
+}
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 /* sidebar */
 .foto {
@@ -180,4 +289,7 @@ img:hover {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
+}
+.content-hidden {
+  display: none;
 }
