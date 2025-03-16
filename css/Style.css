@@ -4,8 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: #e0e6e9; */
-  background-color: #267197;
+  background-color: #e0e6e9;
 }
 .main-conteiner {
   display: flex;
