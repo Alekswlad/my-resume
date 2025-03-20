@@ -9,15 +9,15 @@ body {
 .main-conteiner {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  max-width: 1200px;
   background-color: #fff;
-  margin: 40px auto;
+  margin: 0px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 /* main conent */
 
 .main-content {
-  padding: 50px 50px;
+  padding: 40px 40px;
 }
 
 .main-content-title {
@@ -43,24 +43,25 @@ body {
   font-size: 45px;
   line-height: 55px;
   color: #000;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .abaut-me-description {
-  width: 400px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #595959;
+  color: #000;
 }
 
 .my-progects {
-  margin: 25px 0px;
+  margin: 20px 0px;
 }
 
 .my-progects-list {
   padding: 0 0 0 17px;
+  column-count: 2; /* Встановлює кількість колонок */
+  column-gap: 20px; /* Встановлює відстань між колонками */
 }
 
 .my-progects-item {
@@ -72,8 +73,9 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  text-decoration: none;
   line-height: 24px;
-  color: #595959;
+  color: #000;
   margin-left: 5px;
 }
 
@@ -103,7 +105,7 @@ body {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #646363;
+  color: #000;
 }
 .experience-period {
   color: #000;
